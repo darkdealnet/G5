@@ -1,0 +1,6 @@
+FROM python:3.9.2-slim
+
+WORKDIR /opt/worker
+ADD . /opt/worker
+
+RUN pip install celery[redis]

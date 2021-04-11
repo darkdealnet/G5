@@ -1,0 +1,7 @@
+FROM python:3.9.2-slim
+RUN mkdir -p /opt/web
+WORKDIR /opt/web
+ADD . /opt/web
+
+RUN pip install flower
+RUN pip install uvicorn
